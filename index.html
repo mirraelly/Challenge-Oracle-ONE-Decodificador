@@ -11,42 +11,63 @@
 
 <body>
     <header>
-        <img src="" alt="Logo da Alura">
+        <img src="imagens\alura-logo.svg" alt="Logo da Alura">
     </header>
-    <main>
-        <div>
-            <h1>Digite seu texto aqui</h1>
-            <textarea name="" id="apagar" maxlength="2000" rows="1"></textarea>
+    <main class="conteiner">
+        <div class="painel-esquerda">
+            <div>
+                <h1>Digite seu texto aqui</h1>
+                <textarea name="" id="apagar" maxlength="2000" rows="1"></textarea>
+            </div>
+            <div>
+                <span class="atencao">
+                    !
+                </span>
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <button class="criptografar">
+                    Criptografar
+                </button>
+                <button class="descriptografar">
+                    Descriptografar
+                </button>
+            </div>
         </div>
-        <div>
-            <span class="atencao">
-                !
-            </span>
-            <p>Apenas letras minúsculas e sem acento.</p>
-            <button class="criptografar">
-                Criptografar
-            </button>
-            <button class="descriptografar">
-                Descriptografar
-            </button>
-        </div>
-        <div>
-            <img src="" alt="foto">
+        <div class="painel-direita">
+            <figure>
+                <img src="imagens/spy.jpg" alt="foto">
+                <figcaption> <a
+                        href="https://www.freepik.com/free-vector/detective-kids-concept-illustration_38604648.htm#query=clue&position=18&from_view=search&track=sph">
+                        Image by storyset</a> on Freepik</figcaption>
+            </figure>
+
             <h1>Nenhuma mensagem encontrada</h1>
             <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
     </main>
     <footer>
-        <div>
+        <div class="texto-centro">
             &copy; Desenvolvido por Mirraely Moura
         </div>
         <div>
-            <img src="" alt="logoLinkedin">
-            <img src="" alt="logoGitHub">
-            <img src="" alt="logoInstagram">
+            <figure class="logos">
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/mirraely/" target="_blank">
+                        <img src="imagens/linkedin.png" alt="logoLinkedin">
+                    </a>
+                    <a href="https://github.com/mirraelly" target="_blank">
+                        <img src="imagens/github.png" alt="logoGitHub">
+                    </a>
+                    <a href="https://www.instagram.com/mirraely__/" target="_blank">
+                        <img src="imagens/instagram.png" alt="logoInstagram">
+                    </a>
+                </div>
+                <figcaption>Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </figcaption>
+            </figure>
         </div>
     </footer>
 
     <script src="index.js" type="text/javascript"></script>
 </body>
+
 </html>

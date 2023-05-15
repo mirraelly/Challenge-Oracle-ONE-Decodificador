@@ -16,6 +16,16 @@ function descriptografar(texto) {
     return resultado;
 }
 
+function validaEntrada(texto){
+    let minusculo = texto.toLowerCase();
+    let maiusculo = texto.toUpperCase();
+    if(texto == minusculo){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 function testar() {
     console.assert(criptografar("arroz") == "airroberz", "A criptografia está quebrada");
     console.assert(descriptografar("enter") == "e", "A descriptografia está quebrada");

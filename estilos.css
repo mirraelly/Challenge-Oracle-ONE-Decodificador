@@ -1,0 +1,49 @@
+.conteiner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.painel-esquerda {
+    width: 75%;
+    float: left;
+}
+
+.painel-direita {
+    width: 25%;
+    float: right;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 9px;
+}
+
+footer {
+    clear: both;
+    font-size: 10pt;
+    padding-top: 30px;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+.redes {
+    width: 78px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.redes img {
+    width: 26px;
+}
