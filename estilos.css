@@ -39,22 +39,42 @@ textarea {
     font-size: 0;
 }
 
-.criptografar, .descriptografar {
+.botoes button.criptografar:hover {
+    filter: brightness(110%)
+}
+
+.botoes button.criptografar:active {
+    box-shadow: 2px 2px rgb(141, 141, 141);
+}
+
+.botoes button.descriptografar:hover {
+    filter: brightness(90%);
+}
+
+.botoes button.descriptografar:active {
+    box-shadow: 2px 2px lightgray;
+}
+
+.criptografar,
+.descriptografar {
+    cursor: pointer;
     padding: 16px 0;
     font-size: 14px;
     width: 45%;
     margin-right: 2.5%;
-    border-radius: 22px ;
+    border-radius: 12px;
+    font-weight: bold;
+    border: solid 1px black;
 }
 
 .criptografar {
-    background-color: green;
+    background-color: #529f77;
     color: white;
 }
 
 .descriptografar {
     background-color: white;
-    color: green;
+    color: #529f77;
 }
 
 .painel-direita {
