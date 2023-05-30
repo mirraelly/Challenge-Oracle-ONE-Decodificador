@@ -1,3 +1,8 @@
+body {
+    background-color: #f7fdf3;
+    /* background-color: #008080; */
+}
+
 header {
     padding-left: 30px;
     padding-top: 15px;
@@ -6,12 +11,23 @@ header {
 .conteiner {
     width: 1000px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 2px 2px 2px 2px lightgrey;
 }
 
 .painel-esquerda {
-    width: 75%;
-    float: left;
     padding-top: 20px;
+    flex: 3;
+}
+
+.painel-texto {
+    width: 90%;
+    margin: auto;
 }
 
 textarea {
@@ -20,12 +36,14 @@ textarea {
     resize: none;
     font-size: 30px;
     height: 300px;
-
+    width: 100%;
+    background-color: transparent;
 }
 
 .atencao {
     color: white;
-    background-color: black;
+    background-color: rgb(245, 93, 5);
+    font-weight: bold;
     height: 18px;
     width: 18px;
     border-radius: 9px;
@@ -37,6 +55,9 @@ textarea {
 
 .botoes {
     font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5%;
 }
 
 .botoes button.criptografar:hover {
@@ -55,16 +76,20 @@ textarea {
     box-shadow: 2px 2px lightgray;
 }
 
-.criptografar,
-.descriptografar {
+button {
+    flex: 1;
     cursor: pointer;
-    padding: 16px 0;
     font-size: 14px;
-    width: 45%;
-    margin-right: 2.5%;
     border-radius: 12px;
     font-weight: bold;
     border: solid 1px black;
+    background-color: white;
+    color: #529f77;
+}
+
+.criptografar,
+.descriptografar {
+    padding: 16px 0;
 }
 
 .criptografar {
@@ -78,9 +103,20 @@ textarea {
 }
 
 .painel-direita {
-    width: 25%;
-    float: right;
     text-align: center;
+    flex: 1;
+    border-radius: 10px;
+    /* background-color: #c7dffa; */
+    background-color: #b9d1c58a;
+    box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
 }
 
 figure img {
@@ -100,7 +136,7 @@ figure figcaption {
 
 footer {
     clear: both;
-    font-size: 10pt;
+    font-size: 12pt;
     padding-top: 30px;
 }
 
@@ -108,12 +144,40 @@ footer {
     text-align: center;
 }
 
+.logos {
+    padding: 8px 0;
+}
+
 .redes {
-    width: 78px;
+    width: 96px;
     margin: 0 auto;
     font-size: 0;
 }
 
 .redes img {
-    width: 26px;
+    width: 32px;
+}
+
+.texto-criptografia {
+    height: 100%;
+}
+
+.conteiner-criptografia {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+.botoes-secundarios {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+}
+
+.botoes-secundarios button {
+    padding: 8px 0;
 }

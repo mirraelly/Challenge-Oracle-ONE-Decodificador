@@ -15,35 +15,51 @@
     </header>
     <main class="conteiner">
         <div class="painel-esquerda">
-            <div>
-                <textarea id="apagar" maxlength="2000" rows="1" placeholder="Digite seu texto aqui"></textarea>
-            </div>
-            <div>
-                <p>
-                    <span class="atencao">!</span>
-                    Apenas letras minúsculas e sem acento.
-                </p>
-                <div class="botoes">
-                    <button class="criptografar">
-                        Criptografar
-                    </button>
-                    <button class="descriptografar">
-                        Descriptografar
-                    </button>
+            <div class="painel-texto">
+                <div>
+                    <textarea id="textoCriptografar" maxlength="2000" rows="1"
+                        placeholder="Digite seu texto aqui"></textarea>
                 </div>
-
+                <div>
+                    <p>
+                        <span class="atencao">!</span>
+                        Apenas letras minúsculas e sem acento.
+                    </p>
+                    <div class="botoes">
+                        <button class="criptografar" id="criptografar">
+                            Criptografar
+                        </button>
+                        <button class="descriptografar" id="descriptografar">
+                            Descriptografar
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="painel-direita">
-            <figure>
-                <img src="imagens/spy.jpg" alt="foto">
-                <figcaption> <a
-                        href="https://www.freepik.com/free-vector/detective-kids-concept-illustration_38604648.htm#query=clue&position=18&from_view=search&track=sph">
-                        Image by storyset</a> on Freepik</figcaption>
-            </figure>
+            <div class="nenhum-texto">
+                <figure>
+                    <img src="imagens/spy.png" alt="foto">
+                    <figcaption> <a
+                            href="https://www.freepik.com/free-vector/detective-kids-concept-illustration_38604648.htm#query=clue&position=18&from_view=search&track=sph"
+                            target="_blank">
+                            Image by storyset</a> on Freepik</figcaption>
+                </figure>
 
-            <h3>Nenhuma mensagem encontrada</h3>
-            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div class="texto-criptografia display-none">
+                <div class="conteiner-criptografia">
+                    <div>
+                        <textarea id="textoCriptografado" readonly></textarea>
+                    </div>
+                    <div class="botoes-secundarios">
+                        <button id="copiar">Copiar</button>
+                        <button id="apagar">Apagar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
