@@ -1,6 +1,5 @@
 body {
     background-color: #f7fdf3;
-    /* background-color: #008080; */
 }
 
 header {
@@ -106,7 +105,6 @@ button {
     text-align: center;
     flex: 1;
     border-radius: 10px;
-    /* background-color: #c7dffa; */
     background-color: #b9d1c58a;
     box-shadow: 2px 2px 2px 2px lightgrey;
 }
