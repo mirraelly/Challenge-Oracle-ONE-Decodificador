@@ -179,3 +179,28 @@ footer {
 .botoes-secundarios button {
     padding: 8px 0;
 }
+
+
+/* responsividade */
+
+@media screen and (max-width: 720px) {
+    .botoes, .botoes-secundarios{
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    textarea {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    .conteiner {
+        flex-direction: column;
+        width: 80%;
+        margin-top: 20px;
+    }
+    .conteiner-criptografia {
+        align-items: flex-start;
+    }
+}
