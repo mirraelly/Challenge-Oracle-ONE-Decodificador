@@ -51,6 +51,11 @@ function validaEntrada(texto) {
         return false;
     }
 
+    //Expressões regulares.
+    if (texto.replace(/\w/gi, '').length > 0 || texto.replace(/\D/gi, '').length > 0) {
+        return false;
+    }
+
     let minusculo = texto.toLowerCase();
     if (texto == minusculo) {
         return true;
@@ -81,7 +86,7 @@ buttonCriptografar.addEventListener('click', () => {
 
         atualizarInterface(textoFinal);
     } else {
-        alert('O texto digitado possui letras maiúsculas e/ou com acentos.\n' +
+        alert('Você digitou letras maiúsculas, acentos e/ou caracteres especiais.\n' +
             'Por favor, digite um texto válido!')
     }
 });
