@@ -33,6 +33,11 @@ header h1 {
 
 }
 
+header h1 a {
+    text-decoration: none;
+    color: #ff7878;
+}
+
 .painel-texto {
     width: 90%;
     margin: auto;
