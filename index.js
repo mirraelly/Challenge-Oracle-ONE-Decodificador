@@ -52,7 +52,7 @@ function validaEntrada(texto) {
     }
 
     //Expressões regulares.
-    if (texto.replace(/\w/gi, '').length > 0 || texto.replace(/\D/gi, '').length > 0) {
+    if (texto.replace(/\w/gi, '').trim().length > 0 || texto.replace(/\D/gi, '').trim().length > 0) {
         return false;
     }
 

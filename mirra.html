@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mirra.css">
+    <title>Decodificador - Mirraely </title>
+</head>
+
+<body>
+    <header>
+        <h1>M</h1>
+    </header>
+    <main class="conteiner">
+        <div class="painel-esquerda">
+            <div class="painel-texto">
+                <div>
+                    <textarea id="textoCriptografar" maxlength="2000" rows="1"
+                        placeholder="Digite seu texto aqui"></textarea>
+                </div>
+                <div>
+                    <p>
+                        <span class="atencao">!</span>
+                        Apenas letras minúsculas e sem acento.
+                    </p>
+                    <div class="botoes">
+                        <button class="criptografar" id="criptografar">
+                            Criptografar
+                        </button>
+                        <button class="descriptografar" id="descriptografar">
+                            Descriptografar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="painel-direita">
+            <div class="nenhum-texto">
+                <figure>
+                    <img src="imagens/diamante.jpeg" alt="foto">
+                </figure>
+
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div class="texto-criptografia display-none">
+                <div class="conteiner-criptografia">
+                    <div>
+                        <textarea id="textoCriptografado" readonly></textarea>
+                    </div>
+                    <div class="botoes-secundarios">
+                        <button id="copiar">Copiar</button>
+                        <button id="apagar">Apagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="texto-centro">
+            &copy; Desenvolvido por Mirraely Moura
+        </div>
+        <div>
+            <figure class="logos">
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/mirraely/" target="_blank">
+                        <img src="imagens/linkedin.png" alt="logoLinkedin">
+                    </a>
+                    <a href="https://github.com/mirraelly" target="_blank">
+                        <img src="imagens/github-branco.png" alt="logoGitHub">
+                    </a>
+                    <a href="https://www.instagram.com/mirraely__/" target="_blank">
+                        <img src="imagens/instagram.png" alt="logoInstagram">
+                    </a>
+                </div>
+                <figcaption>Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </figcaption>
+            </figure>
+        </div>
+    </footer>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
