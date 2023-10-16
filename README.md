@@ -2,7 +2,7 @@
 
 O desafio da Sprint 01 do programa ONE (uma parceria entre a Oracle e a Alura) foi a construção de um codificador de texto em JavaScript sem o uso de frameworks.
 
-Para conferir como ficou o meu projeto, [clique aqui](https://mirraelly.github.io/Challenge-Oracle-ONE-Decodificador/index.html).
+Para conferir como ficou o meu projeto, <a target="_blank" href="https://mirraelly.github.io/Challenge-Oracle-ONE-Decodificador/"> clique aqui</a>.
 
 ## Tecnologias utilizadas
 <div style="display: inline_block"><br>
