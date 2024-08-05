@@ -1,0 +1,274 @@
+:root {
+    --backgroud-color: #E5E5E5;
+    --text-color: #495057;
+    --primary-color: #0A3871;
+    --secondary-color: #FFFFFF;
+    --alert-color: #343A40;
+    --shadow-color: lightgrey;
+    --backgroud-button-color: #D8DFE8;
+    --cripto-hover-btn-color: #bbbbbbd5;
+}
+
+.dark-mode {
+    --backgroud-color: #000000;
+    --text-color: #FFFFFF;
+    --primary-color: #93257e;
+    --secondary-color: #f1d0eb;
+    --alert-color: #ff0000ed;
+    --shadow-color: #c1a4bb;
+    --backgroud-button-color: #e4c4dd;
+    --cripto-hover-btn-color: #bbbbbbd5;
+}
+
+body {
+    background-color: var(--backgroud-color);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 6em 0;
+}
+
+aside {
+    margin: 0 auto;
+}
+
+aside h1 {
+    font-family: bold;
+    margin: 0;
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-shadow: var(--secondary-color) -2px 1px 1px;
+}
+
+.container {
+    width: 70em;
+    /* margin: 0 0 0 11.5em; */
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.container .left-panel {
+    flex: 3;
+}
+
+.container .left-panel .text-panel {
+    width: 90%;
+    height: 18.75em;
+    margin: 8.5em 1.75em;
+}
+
+.container .left-panel .text-panel textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.875em;
+    height: 12em;
+    width: 100%;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+::placeholder {
+    color: var(--primary-color);
+    /* opacity: 0.6; */
+}
+
+.attention-text {
+    color: var(--text-color);
+    padding: 1.0625em 0.1875em;
+}
+
+.attention {
+    color: var(--secondary-color);
+    background-color: var(--alert-color);
+    font-weight: bold;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    display: block;
+    text-align: center;
+    float: left;
+    margin-right: 4px;
+}
+
+.buttons {
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5%;
+}
+
+.buttons button.encrypt:hover {
+    filter: brightness(110%)
+}
+
+.buttons button.encrypt:active {
+    box-shadow: 2px 2px var(--cripto-hover-btn-color);
+}
+
+.buttons button.decrypt:hover {
+    filter: brightness(90%);
+    background: var(--background-color);
+}
+
+.buttons button.decrypt:active {
+    box-shadow: 2px 2px var(--background-color);
+}
+
+button {
+    flex: 1;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 24px;
+    font-weight: bold;
+    border: solid 1px var(--primary-color);
+    background-color: var(--secondary-color);
+    /* color: var(--cor-button-texto); */
+}
+
+.encrypt,
+.decrypt {
+    padding: 16px 0;
+}
+
+.encrypt {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.decrypt {
+    background-color: var(--backgroud-button-color);
+    color: var(--primary-color);
+}
+
+.right-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    border-radius: 2em;
+    background-color: var(--secondary-color);
+    box-shadow: 2px 2px 2px 2px var(--shadow-color);
+    overflow: hidden;
+    max-width: 15.375em;
+}
+
+.right-panel h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.no-text {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 9px;
+}
+
+.encryption-text {
+    height: 100%;
+}
+
+.conteiner-criptografia {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+.secondary-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+}
+
+.secondary-buttons button {
+    padding: 8px 0;
+}
+
+footer {
+    clear: both;
+    font-size: 12pt;
+    padding-top: 30px;
+    color: var(--text-color);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.logos {
+    padding: 8px 0;
+}
+
+.networks {
+    width: 96px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.networks img {
+    width: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* responsividade */
+
+@media screen and (max-width: 720px) {
+
+    .buttons,
+    .botoes-secundarios {
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    textarea {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    .conteiner {
+        flex-direction: column;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .conteiner-criptografia {
+        align-items: flex-start;
+    }
+}

@@ -136,3 +136,23 @@ function atualizarInterface(textoFinal) {
     divTextoCriptografia.classList.remove('display-none');
     divTextoCriptografia.classList.add('display-block');
 }
+
+/**
+ * Modo dark
+ */
+
+// document.documentElement.style.setProperty("--cor-fundo", "black");
+// document.documentElement.style.setProperty("--cor-fundo-conteiner", "#f3e7f3");
+// document.documentElement.style.setProperty("--cor-sombra-conteiner", "white");
+// document.documentElement.style.setProperty("--cor-atencao", "white");
+// document.documentElement.style.setProperty("--cor-fundo-atencao", "#fd5757");
+// document.documentElement.style.setProperty("--cor-button-borda", "#ff3e3e");
+// document.documentElement.style.setProperty("--cor-button-fundo", "#white");
+// document.documentElement.style.setProperty("--cor-button-texto", "#ff3e3e");
+// document.documentElement.style.setProperty("--cor-button-criptografar-fundo", "#ff3e3e");
+// document.documentElement.style.setProperty("--cor-button-criptografar-texto", "white;");
+// document.documentElement.style.setProperty("--cor-button-descriptografar-fundo", "white");
+// document.documentElement.style.setProperty("--cor-button-descriptografar-texto", "#ff3e3e");
+// document.documentElement.style.setProperty("--cor-painel-direita-fundo", "#ff6b6b47");
+// document.documentElement.style.setProperty("--cor-painel-direita-sombra","lightgrey")
+

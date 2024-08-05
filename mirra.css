@@ -12,7 +12,7 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-   background-color: #f3e7f3;
+    background-color: #f3e7f3;
     border-radius: 10px;
     padding: 20px;
     gap: 20px;
@@ -29,7 +29,7 @@ header h1 {
     margin: 0;
     font-size: 3rem;
     color: #ff7878;
-    text-shadow: #FEFEFE -2px 1px 1px; 
+    text-shadow: #FEFEFE -2px 1px 1px;
 }
 
 header h1 a {
@@ -130,7 +130,7 @@ button {
 }
 
 .painel-direita h3 {
-    color:#ff3e3e;
+    color: #ff3e3e;
 }
 
 .painel-direita p {
@@ -209,7 +209,7 @@ footer {
 }
 
 .logos figcaption {
-    color:rgb(231, 217, 217);
+    color: rgb(231, 217, 217);
 }
 
 .texto-centro {
@@ -225,7 +225,9 @@ footer {
 /* responsividade */
 
 @media screen and (max-width: 720px) {
-    .botoes, .botoes-secundarios{
+
+    .botoes,
+    .botoes-secundarios {
         gap: 5px;
         flex-direction: column;
     }
@@ -241,6 +243,7 @@ footer {
         width: 80%;
         margin-top: 20px;
     }
+
     .conteiner-criptografia {
         align-items: flex-start;
     }
