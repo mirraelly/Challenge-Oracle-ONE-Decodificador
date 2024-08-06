@@ -22,6 +22,9 @@
 
 body {
     background-color: var(--backgroud-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 main {
@@ -44,7 +47,6 @@ aside h1 {
 
 .container {
     width: 70em;
-    /* margin: 0 0 0 11.5em; */
     display: flex;
     justify-content: space-around;
     gap: 2em;
@@ -54,21 +56,31 @@ aside h1 {
     flex: 3;
 }
 
-.container .left-panel .text-panel {
+.container>.left-panel>.text-panel {
     width: 90%;
     height: 18.75em;
-    margin: 8.5em 1.75em;
+    margin: 8.5em 0.5em;
 }
 
-.container .left-panel .text-panel textarea {
+textarea {
     border: none;
     outline: none;
     resize: none;
-    font-size: 1.875em;
-    height: 12em;
+    line-height: 150%;
     width: 100%;
     background-color: transparent;
     color: var(--primary-color);
+}
+
+.left-textarea {
+    font-size: 2em;
+    height: 12em;
+}
+
+.rigth-textarea {
+    font-size: 1.5em;
+    height: 20em;
+    color: var(--alert-color);
 }
 
 ::placeholder {
@@ -79,19 +91,22 @@ aside h1 {
 .attention-text {
     color: var(--text-color);
     padding: 1.0625em 0.1875em;
+    font-size: 0.75em;
+    line-height: 1em;
 }
 
 .attention {
     color: var(--secondary-color);
     background-color: var(--alert-color);
     font-weight: bold;
-    height: 18px;
-    width: 18px;
+    height: 1em;
+    line-height: 1em;
+    width: 1.125em;
     border-radius: 9px;
     display: block;
     text-align: center;
     float: left;
-    margin-right: 4px;
+    margin-right: 0.4375em;
 }
 
 .buttons {
@@ -154,37 +169,25 @@ button {
     background-color: var(--secondary-color);
     box-shadow: 2px 2px 2px 2px var(--shadow-color);
     overflow: hidden;
-    max-width: 15.375em;
-}
-
-.right-panel h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.no-text {
-    padding: 2em 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+    min-width: 18em;
 }
 
 .display-none {
-    display: none;
+    display: none !important;
 }
 
 .display-block {
     display: block;
 }
 
-figure img {
-    width: 100%;
+figure {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
 }
 
-figure {
+figure img {
     width: 100%;
-    padding: 0;
-    margin: 0;
 }
 
 figure figcaption {
@@ -201,7 +204,7 @@ figure figcaption {
     align-items: end;
     flex-direction: column;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 
 .secondary-buttons {
@@ -214,6 +217,25 @@ figure figcaption {
 
 .secondary-buttons button {
     padding: 8px 0;
+}
+
+.no-text {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.right-panel h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.no-text p {
+    line-height: 150%;
 }
 
 footer {

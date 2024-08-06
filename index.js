@@ -67,8 +67,8 @@ function validaEntrada(texto) {
 // Variáveis para armazenar elementos da página.
 const textareaCriptografar = document.querySelector('#textoCriptografar');
 const textareaCriptografado = document.querySelector('#textoCriptografado');
-const divNenhumTexto = document.querySelector('.nenhum-texto');
-const divTextoCriptografia = document.querySelector('.texto-criptografia');
+const divNenhumTexto = document.querySelector('.no-text');
+const divTextoCriptografia = document.querySelector('.encryption-text');
 
 // Variáveis para armazenar elementos que o usuário utiliza.
 const buttonCriptografar = document.querySelector('#criptografar');

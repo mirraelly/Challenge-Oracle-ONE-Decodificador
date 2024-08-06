@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/index.css">
-    <!-- <script src="index.js" type="text/javascript" defer></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="index.js" type="text/javascript" defer></script>
     <title>Decodificador - Challenge Oracle ONE</title>
 </head>
 
@@ -30,7 +33,7 @@
                 <div class="text-panel">
                     <div>
                         <textarea id="textoCriptografar" maxlength="2000" rows="1"
-                            placeholder="Digite seu texto aqui"></textarea>
+                            placeholder="Digite seu texto aqui" class="left-textarea"></textarea>
                     </div>
                     <div>
                         <p class="attention-text">
@@ -49,16 +52,16 @@
                 </div>
             </section>
             <section class="right-panel">
-                <div class="right-panel-container">
+                <div class="right-panel-container no-text">
                     <div class="right-panel-box">
                         <figure class="light-panel-image">
                             <img src="imagens/diamante.svg"
                                 alt="Person's image holding a magnifying glass to see a diamond.">
                         </figure>
                         <!-- <figure class="dark-panel-image">
-                        <img src="imagens/diamante.jpeg" alt="People's image looking for diamond.">
-                    </figure> -->
-                        <div class="no-text">
+                          <img src="imagens/diamante.jpeg" alt="People's image looking for diamond.">
+                        </figure> -->
+                        <div>
                             <h3>Nenhuma mensagem encontrada</h3>
                             <p>Digite um texto que você deseja criptografar ou descriptografar</p>
                         </div>
@@ -67,7 +70,7 @@
                 <div class="encryption-text display-none">
                     <div class="conteiner-criptografia">
                         <div>
-                            <textarea id="textoCriptografado" readonly></textarea>
+                            <textarea id="textoCriptografado"  class="rigth-textarea" readonly></textarea>
                         </div>
                         <div class="secondary-buttons">
                             <button id="copiar">Copiar</button>
