@@ -12,20 +12,6 @@
   --backgroud-scrollbar-track: #f1f1f1;
 }
 
-.dark-mode {
-  --backgroud-color: #000000;
-  --text-color: #ffffff;
-  --primary-color: #93257e;
-  --secondary-color: #f1d0eb;
-  --alert-color: #ff0000ed;
-  --shadow-color: #c1a4bb;
-  --backgroud-button-color: #e4c4dd;
-  --cripto-hover-btn-color: #bbbbbbd5;
-  --backgroud-scroll: #888;
-  --backgroud-scroll-hover: #555;
-  --backgroud-scrollbar-track: #f1f1f1;
-}
-
 body {
   background-color: var(--backgroud-color);
   font-family: "Inter", sans-serif;
@@ -36,7 +22,7 @@ body {
 main {
   display: flex;
   justify-content: space-between;
-  padding: 2em 2em 6em 0;
+  padding: 2em 2em 2em 0;
 }
 
 aside {
@@ -91,7 +77,6 @@ textarea {
 
 ::placeholder {
   color: var(--primary-color);
-  /* opacity: 0.6; */
 }
 
 .attention-text {
@@ -147,7 +132,6 @@ button {
   font-weight: bold;
   border: solid 1px var(--primary-color);
   background-color: var(--secondary-color);
-  /* color: var(--cor-button-texto); */
 }
 
 .encrypt,
@@ -198,7 +182,7 @@ figure img {
 
 figure figcaption {
   text-align: center;
-  font-size: 9px;
+  font-size: 0.5625em;
 }
 
 .encryption-text {
@@ -210,7 +194,7 @@ figure figcaption {
   align-items: end;
   flex-direction: column;
   height: 100%;
-  padding: 20px;
+  padding: 1.25em;
 }
 
 .secondary-buttons {
@@ -218,11 +202,11 @@ figure figcaption {
   justify-content: space-around;
   width: 90%;
   margin: auto;
-  gap: 10px;
+  gap: 0.625em;
 }
 
 .secondary-buttons button {
-  padding: 8px 0;
+  padding: 0.5em 0;
 }
 
 .no-text {
@@ -232,6 +216,12 @@ figure figcaption {
   gap: 1.2em;
   width: 90%;
   margin: 0 auto;
+}
+
+.alert-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .right-panel h3 {
@@ -246,9 +236,10 @@ figure figcaption {
 
 footer {
   clear: both;
-  font-size: 12pt;
-  padding-top: 30px;
+  font-size: 0.8em;
+  padding-top: 1.875em;
   color: var(--text-color);
+  padding-bottom: 1em;
 }
 
 .center-text {
@@ -256,7 +247,7 @@ footer {
 }
 
 .logos {
-  padding: 8px 0;
+  padding: 0.5em 0;
 }
 
 .networks {
@@ -352,12 +343,6 @@ a {
 
   .conteiner-criptografia {
     align-items: flex-start;
-  }
-
-  .alert-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
   }
 
   .no-text {
