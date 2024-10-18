@@ -279,6 +279,7 @@ a {
   main {
     padding: 3em 0em 1em 1.2em;
     flex-direction: column;
+    justify-content: center;
   }
 
   aside {
