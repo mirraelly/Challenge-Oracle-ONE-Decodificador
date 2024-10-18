@@ -277,7 +277,7 @@ a {
 
 @media screen and (max-width: 768px) {
   main {
-    padding: 3em 0em 1em 0.8em;
+    padding: 3em 0em 1em 1.2em;
     flex-direction: column;
   }
 
