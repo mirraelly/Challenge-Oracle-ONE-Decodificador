@@ -304,14 +304,14 @@ a {
   }
 
   .text-panel .buttons {
-    max-width: 93%;
+    max-width: 92%;
   }
 
   .light-panel-image {
     display: none;
   }
   .right-panel {
-    margin-right: 1.3em;
+    margin-right: 1.4em;
     min-width: unset;
     min-height: 10em;
   }
@@ -362,7 +362,7 @@ a {
 
   .no-text {
     width: 100%;
-    padding: 2em 0;
+    padding: 2em 1em;
     justify-content: center;
   }
 
