@@ -225,7 +225,7 @@ footer {
 /* responsividade */
 
 @media screen and (max-width: 720px) {
-
+ 
     .botoes,
     .botoes-secundarios {
         gap: 5px;
@@ -238,7 +238,8 @@ footer {
 }
 
 @media screen and (max-width: 1068px) {
-    .conteiner {
+  
+    .container {
         flex-direction: column;
         width: 80%;
         margin-top: 20px;
